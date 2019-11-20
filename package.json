@@ -1,0 +1,26 @@
+{
+  "name": "actions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava -v",
+    "build": "npx tsc",
+    "start": "node src/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matt-halliday/actions.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matt-halliday/actions/issues"
+  },
+  "homepage": "https://github.com/matt-halliday/actions#readme",
+  "devDependencies": {
+    "@types/node": "^12.12.11",
+    "ava": "^2.4.0",
+    "typescript": "^3.7.2"
+  }
+}
