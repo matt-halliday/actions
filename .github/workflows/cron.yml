@@ -1,0 +1,22 @@
+name: Daily Inspo
+
+on:
+  schedule:
+    - cron:  '*/15 * * * *'
+
+jobs:
+  mail:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Setup Node
+      uses: actions/setup-node@v1
+      with:
+        node-version: '12.x'
+    - name: npm install, build
+      run: |
+        npm ci
+        npm run build
+
+    - name: Mail Inspirational Poem
+      run: npm run mail

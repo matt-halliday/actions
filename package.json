@@ -6,7 +6,8 @@
   "scripts": {
     "test": "ava -v",
     "build": "npx tsc",
-    "start": "node src/main.js"
+    "start": "node src/main.js",
+    "mail": "node src/mail/mailer.js"
   },
   "repository": {
     "type": "git",
